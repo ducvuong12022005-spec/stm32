@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"bmi160ldrdht\startup_stm32f103xb.o"
+"bmi160ldrdht\main.o"
+"bmi160ldrdht\stm32f1xx_it.o"
+"bmi160ldrdht\stm32f1xx_hal_msp.o"
+"bmi160ldrdht\stm32f1xx_hal_gpio_ex.o"
+"bmi160ldrdht\stm32f1xx_hal_i2c.o"
+"bmi160ldrdht\stm32f1xx_hal.o"
+"bmi160ldrdht\stm32f1xx_hal_rcc.o"
+"bmi160ldrdht\stm32f1xx_hal_rcc_ex.o"
+"bmi160ldrdht\stm32f1xx_hal_gpio.o"
+"bmi160ldrdht\stm32f1xx_hal_dma.o"
+"bmi160ldrdht\stm32f1xx_hal_cortex.o"
+"bmi160ldrdht\stm32f1xx_hal_pwr.o"
+"bmi160ldrdht\stm32f1xx_hal_flash.o"
+"bmi160ldrdht\stm32f1xx_hal_flash_ex.o"
+"bmi160ldrdht\stm32f1xx_hal_exti.o"
+"bmi160ldrdht\stm32f1xx_hal_uart.o"
+"bmi160ldrdht\system_stm32f1xx.o"
+--strict --scatter "bmi160ldrdht\bmi160ldrdht.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bmi160ldrdht.map" -o bmi160ldrdht\bmi160ldrdht.axf
